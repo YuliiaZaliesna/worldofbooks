@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Przewodnik do światu książek</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="../wyszukiwanie.js"></script>
+</head>
+<body>
+<header>
+    <nav class="container">
+      <div class="nav-toggle"><span></span></div>
+      <form id="searchform" onsubmit="event.preventDefault(); findString();">
+        <input type="text" name ="search" value="" placeholder="Wyszukaj na stronie" autofocus>
+        <button type="submit" value=" "><i class="fa fa-search"></i></button>
+      </form>
+      <ul id="menu">
+        <li><a href="StronaStartowa.html">Strona główna</a></li>
+        <li><a href="TopKsiazek.html">Top książek</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="posts-list">
+      <article id="post-1" class="post">
+        <div class="post-content">
+          <h2 class="post-title">Wszystko o książkach i nawet więcej</h2>
+        <p><img src="../images/books.jpg"></p>        
+        </div>
+      </article>
+    </div> 
+    <aside>
+        <div class="widget">
+          <h3 class="widget-title">Kategorie</h3>
+          <ul class="widget-category-list">
+            <li><a href="">Klasyka</a></li>
+            <li><a href="">Fantasy</a></li>
+            <li><a href="">Literatura popularnonaukowa</a></li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h3 class="widget-title">Książkowe nowości</h3>
+          <ul class="widget-posts-list">
+            <li>
+              <div class="post-image-small">
+                <img src="../images/miacteczkomiddlemarch.jpg">
+              </div>
+              <h4 class="widget-post-title">Miasteczko Middlemarch.Tom 1</h4>
+            </li>
+            <li>
+              <div class="post-image-small">
+                <img src="../images/pieklowbutelkach.jpg">
+              </div>
+              <h4 class="widget-post-title">Piekło w butelkach</h4>
+            </li>
+            <li>
+              <div class="post-image-small">
+                <img src="../images/listopadoweporzeczki.jpg">
+              </div>
+              <h4 class="widget-post-title">Listopadowe porzeczki</h4>
+            </li>
+          </ul>
+        </div>       
+      </aside>
+      </div>
+    <footer>
+          <h6>Twój przewodnik do światu książek © 2022</h6>
+          <script src="../menu.js"></script>
+      </footer>
+</body>
+</html>

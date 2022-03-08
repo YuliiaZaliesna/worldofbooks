@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Top książek</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="../wyszukiwanie.js"></script>
+</head>
+<body>
+<header>
+    <nav class="container">
+      <div class="nav-toggle"><span></span></div>
+      <form id="searchform" onsubmit="event.preventDefault(); findString();">
+        <input type="text" name ="search" value="" placeholder="Wyszukaj na stronie" autofocus>
+        <button type="submit" value=" "><i class="fa fa-search"></i></button>
+      </form>
+      <ul id="menu">
+        <li><a href="StronaStartowa.html">Strona główna</a></li>
+        <li><a href="TopKsiazek.html">Top książek</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="posts-list">
+      <h2 class="post-title">Książki które warto przeczytać chociaż raz w życiu</h2>
+      
+      <article class="post">
+        <div class="post-content">
+          <h4>1. Mały Książe – Antoine de Saint-Exupery</h4>
+          <div class="post-image"><img src="../images/malyksiaze.jpg"></div>
+          <p>Książka, bez której nie sposób sobie wyobrazić kanonu literatury dziecięcej i młodzieżowej. 
+          Ta uniwersalna opowieść o przyjaźni i odpowiedzialności już od pokoleń wzrusza czytelników na 
+          całym świecie.</p>
+        </div>
+      </article>
+      
+      <article class="post">
+        <div class="post-content">
+          <h4>2. Mistrz i Małgorzata – Michaił Bułhakow</h4>
+          <div class="post-image"><img src="../images/mistrzimalgorzata.jpg"></div>
+          <p>Kot z ważnym biletem goniący tramwaj? A może szybka teleportacja na Plac Czerwony? To właśnie 
+          nietypowe ujęcie absurdu totalitarnej Rosji XX wieku, cieszące się dziś światową sławą.</p>    
+        </div>        
+      </article>
+      
+      <article class="post">
+        <div class="post-content">      
+          <h4>3. Zabić drozda – Harper Lee</h4>
+          <div class="post-image"><img src="../images/zabicdrozda.jpg"></div>
+          <p>Zabić drozda to wstrząsająca historia o dzieciństwie i kryzysie sumienia. Poruszająca opowieść 
+          odwołuje się do tego, co o życiu człowieka najcenniejsze: miłości, współczucia i dobroci.</p>          
+        </div>
+      </article>
+    </div> 
+    <aside>
+        <div class="widget">
+          <h3 class="widget-title">Kategorie</h3>
+          <ul class="widget-category-list">
+            <li><a href="">Klasyka</a></li>
+            <li><a href="">Fantasy</a></li>
+            <li><a href="">Literatura popularnonaukowa</a></li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h3 class="widget-title">Książkowe nowości</h3>
+          <ul class="widget-posts-list">
+            <li>
+              <div class="post-image-small">
+                <img src="../images/miacteczkomiddlemarch.jpg">
+              </div>
+              <h4 class="widget-post-title">Miasteczko Middlemarch.Tom 1</h4>
+            </li>
+            <li>
+              <div class="post-image-small">
+                <img src="../images/pieklowbutelkach.jpg">
+              </div>
+              <h4 class="widget-post-title">Piekło w butelkach</h4>
+            </li>
+            <li>
+              <div class="post-image-small">
+                <img src="../images/listopadoweporzeczki.jpg">
+              </div>
+              <h4 class="widget-post-title">Listopadowe porzeczki</h4>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <footer>
+          <h6>Twój przewodnik do światu książek © 2022</h6>
+          <script src="../menu.js"></script>
+      </footer>
+</body>
+</html>
